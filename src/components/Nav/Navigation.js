@@ -1,7 +1,7 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-import './Navigation.css';
+import "./Navigation.css";
 
 const Navigation = () => {
   return (
@@ -9,7 +9,9 @@ const Navigation = () => {
       <nav>
         <ul>
           <li>
-            <NavLink to="/" exact>All Products</NavLink>
+            <NavLink to="/" exact>
+              All Products
+            </NavLink>
           </li>
           <li>
             <NavLink to="/favorites">Favorites</NavLink>
