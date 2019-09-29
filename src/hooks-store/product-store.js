@@ -1,3 +1,7 @@
+//Here we have 3 ways of doing:
+//Redux - for huge apps and state, too;
+//Context(useDispatch(), useSelector(), useContext()) - for ship the code and for not quite re-rendered components;
+//Our own hook for managing the Redux store and how to write one;
 import { initStore } from "./store";
 
 const configureStore = () => {

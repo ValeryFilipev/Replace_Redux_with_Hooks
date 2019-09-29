@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+//For not only share the logic, but to share the data, too.
 let globalState = {};
 let listeners = [];
 let actions = {};
@@ -17,9 +18,11 @@ export const useStore = () => {
   };
 
   useEffect(() => {
+    //register
     listeners.push(setState);
 
     return () => {
+      //unregister
       listeners = listeners.filter(li => li !== setState);
     };
   }, [setState]);
